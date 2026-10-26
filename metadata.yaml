@@ -2,5 +2,5 @@ name: astrbot_plugin_sticker
 display_name: 表情包 + 语音
 desc: 多行回复合并成 1~2 条；按情绪附本地表情包；用本地 GPT-SoVITS 合成语音（可降调、放慢、加留白）；代码层过滤 AI 腔。
 version: v1.1.0
-author: Guzzer
+author: Salt0Fish
 repo: https://github.com/Salt0Fish/astrbot_plugin_sticker
