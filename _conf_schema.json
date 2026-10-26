@@ -1,0 +1,92 @@
+{
+  "sticker_root": {
+    "type": "string",
+    "description": "表情包根目录（其下按情绪分子目录，另有一个总库目录）",
+    "default": ""
+  },
+  "sticker_fallback_dir": {
+    "type": "string",
+    "description": "总库目录名（在 sticker_root 之下，分类里没图时从这里随机取）",
+    "default": "表情包库"
+  },
+  "tts_url": {
+    "type": "string",
+    "description": "GPT-SoVITS 的 /tts 接口地址，留空则关闭语音功能",
+    "default": ""
+  },
+  "voice_ref": {
+    "type": "string",
+    "description": "参考音频路径（3~10 秒的清晰人声）",
+    "default": ""
+  },
+  "voice_prompt": {
+    "type": "string",
+    "description": "参考音频对应的文字稿（留空也能用，但韵律会差一些）",
+    "default": ""
+  },
+  "voice_dir": {
+    "type": "string",
+    "description": "合成音频的临时输出目录",
+    "default": ""
+  },
+  "voice_cooldown": {
+    "type": "int",
+    "description": "每多少条回复最多发 1 条语音",
+    "default": 6
+  },
+  "voice_min_chars": {
+    "type": "int",
+    "description": "少于这么多字不发语音",
+    "default": 4
+  },
+  "voice_max_chars": {
+    "type": "int",
+    "description": "多于这么多字不发语音",
+    "default": 40
+  },
+  "voice_pitch_semitone": {
+    "type": "float",
+    "description": "语音音高偏移（半音），负数降调",
+    "default": -1.0
+  },
+  "voice_speed": {
+    "type": "float",
+    "description": "语音语速，1.0 为原速",
+    "default": 0.92
+  },
+  "voice_pad_head_ms": {
+    "type": "int",
+    "description": "语音开头留白（毫秒）",
+    "default": 260
+  },
+  "voice_pad_tail_s": {
+    "type": "float",
+    "description": "语音结尾留白（秒）",
+    "default": 0.4
+  },
+  "ffmpeg_path": {
+    "type": "string",
+    "description": "ffmpeg 可执行文件路径，留空则用 PATH 里的 ffmpeg",
+    "default": ""
+  },
+  "one_message_limit": {
+    "type": "int",
+    "description": "多行回复合并成一条的字数上限",
+    "default": 26
+  },
+  "max_parts": {
+    "type": "int",
+    "description": "最多拆成几条消息",
+    "default": 2
+  },
+  "sticker_cooldown": {
+    "type": "int",
+    "description": "每多少条回复最多附 1 张表情包",
+    "default": 4
+  },
+  "enable_ai_speak_filter": {
+    "type": "bool",
+    "description": "是否过滤 AI 腔句式（客服腔、空洞安慰等）",
+    "default": true
+  }
+}
